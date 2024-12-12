@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Time Calculator</title>
+    <style>
+        body {
+         font-family:Verdana, sans-serif;
+         margin: 20px; 
+        }
+         .time-display {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">PREP-TIDS-UDREGNER</h1>
+    <p style="text-align:center;">Sæt kun 'kryds' i de relevante bokse<br>
+    Sæt kun 'kryds' ved den aktuelle scene<br>
+        Samlet tid findes nederst på siden</p>
+    <form id="timeForm">
+
+        <!-- Store Sal -->
+        <br>
+        <hr>
+        <h2>Store Sal</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Arrangementet er i Store Sal 
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Sal, scene, eller orkestergrav er IKKE i samme konfiguration som det foregående arrangement</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen 'talk' eller 'comedy' (maks. 3 mikrofoner)</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 16 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Dante
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="-30"> Der er en MH tekniker som dedikeret patch/scene tekniker
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Showet er af en type der kræver dedikerede FOH/MON teknikere
+        </label><br>
+        
+        <br>
+        <hr>
+
+        <!-- Lille Sal -->
+        <h2>Lille Sal</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Arrangementet er i Lille Sal
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen 'talk' eller 'comedy' (maks. 3 mikrofoner)</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 16 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Dante
+        </label><br>
+        <br>
+        <hr>
+
+        <!-- Rytmisk Sal -->
+        <h2>Rytmisk Sal</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Arrangementet er i Rytmisk Sal 
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Tribunen/scenen er IKKE i samme konfiguration som ved det foregående arrangement</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen 'talk' eller 'comedy' (maks. 3 mikrofoner)</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 16 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Dante
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Der skal transporteres FOH pult til salen
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="-30"> Der er en MH tekniker som dedikeret patch/scene tekniker
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Showet er af en type der kræver dedikerede FOH/MON teknikere
+        </label><br>
+        <hr>
+
+        <!-- Symfonisk Sal -->
+        <h2>Symfonisk Sal</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Arrangementet er i Symfonisk Sal
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen der kræver maks. 2 mikrofoner</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 8 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Waves
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Der skal hænges PA
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Der skal opstilles sidehøjttalere
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Der skal opstilles FOH
+        </label><br>
+        <br>
+        <hr>
+
+        <!-- Caféscenen -->
+        <h2>Caféscenen</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="60"> Arrangementet er på Caféscenen
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen 'talk' eller 'comedy' (maks. 2 mikrofoner)</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 16 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Waves
+        </label><br>
+        <br>
+        <hr>
+
+        <!-- Foyer Syd -->
+        <h2>Foyer Syd</h2>
+        <label> <input type="checkbox" class="time-checkbox" value="120"> Arrangementet er på Foyer Syd scenen
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-15"> <i><small><small>Scenen er færdig-opsat før lydteknikers mødetid</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Musikhusets lydtekniker skal afvikle showet
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="-30"> <i><small><small>Showet er af typen 'talk' eller 'comedy' (maks. 3 mikrofoner)</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 16 input kanaler</small></small></i>
+        </label><br>
+        &emsp;<label> <input type="checkbox" class="time-checkbox" value="30"> <i><small><small>Der er mere end 4 monitor sends</small></small></i>
+        </label><br><br>
+        <label> <input type="checkbox" class="time-checkbox" value="15"> Showet skal multitrackes via Dante
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Der skal benyttes pult ved mixer position
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="30"> Der skal opsættes SUBs
+        </label><br>
+        <label> <input type="checkbox" class="time-checkbox" value="-30"> Der er én eller flere dedikerede stage-hands til opsætning
+        </label><br>
+        <br>
+        <hr>
+        </label><br>
+        <br>
+
+    </form>
+    <div class="time-display">
+        Tid i alt: <span id="totalTime">0t 0m</span>
+    </div>
+    <hr>
+    <hr>
+    <br>
+    <br>
+    <script>
+    const checkboxes = document.querySelectorAll('.time-checkbox');
+    const totalTimeDisplay = document.getElementById('totalTime');
+    
+    // Initialiser total time
+    let totalTime = 0;
+
+    // Funktion til at formattere til timer og minutter
+    function formatTime(minutes) {
+        const hours = Math.floor(minutes / 60);
+        const mins = minutes % 60;
+        return `${hours}t ${mins}m`;
+    }
+
+    // Funktion til at opdatere totalTime
+    function updateTime() {
+        totalTime = 0;
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                totalTime += parseInt(checkbox.value, 10);
+            }
+        });
+        totalTimeDisplay.textContent = formatTime(totalTime);
+    }
+
+    // Lytter til ændringer i checkbokse
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateTime);
+    });
+    </script>
+</body>
+</html>
